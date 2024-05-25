@@ -65,6 +65,11 @@
     /*FG color of the Archive button*/
     --left-panel-bg: var(--dracula-bg-main);
     --main-panel-transparent-bg: var(--dracula-bg-dark);
+    /* Chat View */
+    --chatview__backgroundcolor: var(--dracula-bg-dark);
+    /* Bubbles */
+    --chatview__message_self__backgroundcolor: var(--dracula-accent-2);
+    --chatview__message__backgroundcolor: var(--dracula-bg-main);
 }
 
 /* Conversations Panel */
