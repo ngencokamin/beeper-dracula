@@ -1,0 +1,319 @@
+/* Larger custom CSS text area */
+.mx_AppearanceUserSettingsTab .mx_Field {
+    width: 600px;
+    height: 500px;
+}
+
+/* Dracula disclaimer here */
+:root {
+
+    /* Dracula */
+    --dracula0: #282A36;
+    --dracula1: #44475A;
+    --dracula2: #F8F8F2;
+    --dracula3: #6272A4;
+    --dracula4: #8BE9FD;
+    --dracula5: #50FA7B;
+    --dracula6: #FFB86C;
+    --dracula7: #FF79C6;
+    --dracula8: #BD93F9;
+    --dracula9: #FF5555;
+    --dracula10: #F1FA8C;
+
+
+    /*** Colors assignation ***/
+    --dracula-bg-main: var(--dracula1);
+    --dracula-bg-dark: var(--dracula0);
+    --dracula-text-main: var(--dracula2);
+    --dracula-text-light: var(--dracula2);
+    --dracula-text-dark: var(--dracula3);
+    --dracula-grey: var(--dracula1);
+    --dracula-accent-1: var(--dracula7);
+    --dracula-accent-2: var(--dracula8);
+    --dracula-accent-3: var(--dracula8);
+    --dracula-alert: var(--dracula9);
+
+
+    /** Default values **/
+    --default-avatar-hue: 200;
+    --message-color-saturation: 100%;
+    --message-color-lightness: 15%;
+    --message-color-opacity: 1;
+    --message-bg-saturation: 100%;
+    --message-bg-lightness: 15%;
+    --message-bg-opacity: 0.07;
+    --reply-bg-opacity: 0.2;
+    --reply-bg-saturation: 46%;
+    --reply-bg-lightness: 81%;
+    --reply-to-color-saturation: 100%;
+    --reply-to-color-lightness: 10%;
+    --reply-to-color-opacity: 0.8;
+    --sender-name-saturation: 100%;
+    --sender-name-lightness: 15%;
+    --timestamp-saturation: 100%;
+    --timestamp-lightness: 10%;
+    --reaction-saturation: 97%;
+    --reaction-lightness: 15%;
+    --reaction-opacity: 0.1;
+    --add-reaction-saturation: 98%;
+    --add-reaction-lightness: 15%;
+    --read-receipt-fg: var(--dracula-text-dark);
+    --read-receipt-tooltip-fg: var(--dracula-text-dark);
+    --archive-background: var(--dracula-grey);
+    /*BG color of the Archive button*/
+    --archive-fg: var(--dracula-text-main);
+    /*FG color of the Archive button*/
+    --left-panel-bg: var(--dracula-bg-main);
+    --main-panel-transparent-bg: var(--dracula-bg-dark);
+}
+
+/* Conversations Panel */
+.bp_LeftPanel {
+    background-color: var(--dracula-bg-dark) !important;
+}
+
+/* Sidebar expanded bg */
+div:has(> .bp_col) {
+    background-color: var(--dracula-bg-dark) !important;
+}
+
+/* Chat Sidebar */
+.bp_col {
+    background-color: var(--dracula-bg-main) !important;
+    /* border: var(--dracula-bg-dark) 2px solid; */
+}
+
+/* Settings Dropdown */
+.mx_ContextualMenu_top {
+    background-color: var(--dracula-bg-main);
+    color: var(--dracula-text-main) !important;
+}
+
+/* Titlebar */
+.bp_TitleBar {
+    padding: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 36px;
+    background-color: var(--dracula-bg-dark) !important;
+    border: 1px solid var(--dracula-bg-dark) !important;
+}
+
+/* Chat Header */
+.mx_RoomHeader {
+    background-color: var(--dracula-bg-dark) !important;
+}
+
+/* Chat BG */
+.mx_RoomView_body {
+    background-color: var(--dracula-bg-dark) !important;
+}
+
+/* Incoming Messages */
+
+.mx_EventTile_messageIn .mx_EventTile_line,
+.mx_EventTile_messageIn .mx_EventTile_line:before {
+    background: var(--dracula-bg-main) !important;
+}
+
+.mx_EventTile_messageIn.mx_EventTile_emoji .mx_ReplyChain_wrapper,
+.mx_EventTile_messageIn.mx_EventTile_image .mx_ReplyChain_wrapper,
+.mx_EventTile_messageIn.mx_EventTile_sticker .mx_ReplyChain_wrapper {
+    background: var(--dracula3) !important;
+}
+
+.mx_EventTile_image .mx_EventTile_line--reply-chain.mx_EventTile_line--self {
+    background-color: var(--dracula3) !important;
+}
+
+.mx_EventTile_image .mx_EventTile_line--reply-chain.mx_EventTile_line--self .mx_MImageBody {
+    background-color: var(--dracula3) !important;
+}
+
+.mx_EventTile_messageIn.mx_EventTile_lastInSection .mx_EventTile_line:before {
+    background: var(--dracula-bg-main) !important;
+}
+
+/* Incoming Reaction Bar Color */
+.mx_EventTile_messageIn .mx_EventTile_reactionsContainer {
+    background-color: var(--dracula-bg-main);
+}
+
+
+/* Outgoing Messages */
+
+.mx_EventTile_messageOut:not(.mx_EventTile_emoji, .mx_EventTile_image, .mx_EventTile_sticker) .mx_EventTile_line {
+    background: var(--dracula3) !important;
+}
+
+.mx_EventTile_messageOut.mx_EventTile_emoji .mx_ReplyChain_wrapper,
+.mx_EventTile_messageOut.mx_EventTile_image .mx_ReplyChain_wrapper,
+.mx_EventTile_messageOut.mx_EventTile_sticker .mx_ReplyChain_wrapper {
+    background: var(--dracula3) !important;
+}
+
+.mx_EventTile_image .mx_EventTile_line--reply-chain.mx_EventTile_line--self {
+    background-color: var(--dracula3) !important;
+}
+
+.mx_EventTile_image .mx_EventTile_line--reply-chain.mx_EventTile_line--self .mx_MImageBody {
+    background-color: var(--dracula3) !important;
+}
+
+.mx_EventTile_messageOut.mx_EventTile_lastInSection .mx_EventTile_line:before {
+    background: var(--dracula3) !important;
+}
+
+.mx_EventTile_messageOut .mx_EventTile_caption,
+.mx_EventTile_messageOut .mx_EventTile_content-caption {
+    background: var(--dracula3) !important;
+}
+
+/* Outgoing Reaction Bar Color */
+.mx_EventTile_messageOut .mx_EventTile_reactionsContainer {
+    background-color: var(--dracula3) !important;
+}
+
+/* Quoted Messages */
+.mx_ReplyChain_wrapper .mx_ReplyChain:last-child {
+    background-color: var(--dracula-bg-dark) !important;
+}
+
+/* Incoming Quote Block Text Color */
+.mx_EventTile_messageIn .mx_ReplyTile,
+.bp_ReplyThread_replyTo>strong {
+    color: var(--dracula-text-light) !important;
+}
+
+/* Selected Reaction BG */
+.mx_ReactionsRowButton_selected {
+    background-color: var(--dracula-accent-2) !important;
+}
+
+/* Settings Menu */
+.mx_Dialog {
+    background-color: var(--dracula-bg-main) !important;
+}
+
+/* Selected Settings Item */
+.mx_TabbedView_tabLabel_active {
+    background-color: var(--dracula-accent-2) !important;
+}
+
+/* Homepage */
+
+.mx_HomePage {
+    background-color: var(--dracula-bg-dark);
+}
+
+/* Compose Bar */
+
+.mx_MessageComposer_wrapper {
+    background-color: var(--dracula-bg-main) !important;
+}
+
+/* Oneline tweak */
+/* 
+   Code below was created by TGRush and is used under the GPL-3 License
+   https://codeberg.org/TGRush/beeper-tweaks/src/branch/main/header-online.css
+*/
+
+.bp_LeftPanel {
+    display: grid;
+    grid-template:
+        "header search"
+        "chats chats";
+
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50px auto;
+    align-items: center;
+}
+
+/* Help, Settings, DND Header */
+.bp_LeftPanel>*:nth-child(1) {
+    width: fit-content;
+    height: min-content;
+    grid-area: header;
+    align-self: start;
+}
+
+/* Searchbar & Pen icon */
+.bp_LeftPanel>*:nth-child(2) {
+    width: fit-content;
+    height: min-content;
+    grid-area: search;
+}
+
+/* Chats (favorites and inbox) */
+.bp_LeftPanel>*:nth-child(3) {
+    grid-area: chats;
+}
+
+/* My code */
+
+/* Set icon to stay in one place */
+.bp_TitleBar~.mx_MatrixChat>div:nth-child(1)>div:nth-child(1) {
+    position: absolute;
+    top: 8px;
+    z-index: 2;
+}
+
+/* Align Chat app sidebar */
+.bp_TitleBar~.mx_MatrixChat>div:nth-child(1)>div:nth-child(2) {
+    margin-top: 8px;
+}
+
+/* Remove padding if sidebar is open */
+div.noselect:first-of-type:not([class$="noselect"])~.bp_LeftPanel>div:nth-child(1) {
+    padding: 0;
+    transition: all 0.1s linear;
+}
+
+/* Add margin if sidebar is closed */
+div.noselect:first-of-type[class$="noselect"]~.bp_LeftPanel>div:nth-child(1) {
+    margin-left: 33px;
+    transition: all .1s linear;
+}
+
+/* Set min width for side panel */
+/* Prevents searchbar getting smushed */
+.bp_LeftPanel {
+    min-width: 350px;
+    container-type: inline-size;
+}
+
+/* Searchbar & Pen icon */
+.bp_LeftPanel>*:nth-child(2) {
+    width: auto;
+    margin-left: -1cqw;
+    transition: all .2s linear;
+}
+
+
+/* Resize by Container */
+@container (min-width: 375px) {
+    .bp_LeftPanel>*:nth-child(2) {
+        /* margin-left: calc(50% - 150px); */
+        margin-left: -4cqw;
+    }
+}
+
+@container (min-width: 400px) {
+    .bp_LeftPanel>*:nth-child(2) {
+        margin-left: -7cqw;
+    }
+}
+
+
+@container (min-width: 450px) {
+    .bp_LeftPanel>*:nth-child(2) {
+        margin-left: -10cqw;
+    }
+}
+
+@container (min-width: 500px) {
+    .bp_LeftPanel>*:nth-child(2) {
+        margin-left: -13cqw;
+    }
+}
+
