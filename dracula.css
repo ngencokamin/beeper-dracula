@@ -68,8 +68,9 @@
     /* Chat View */
     --chatview__backgroundcolor: var(--dracula-bg-dark);
     /* Bubbles */
-    --chatview__message_self__backgroundcolor: var(--dracula-accent-2);
+    --chatview__message_self__backgroundcolor: var(--dracula3);
     --chatview__message__backgroundcolor: var(--dracula-bg-main);
+    --floating-button-bg: var(--dracula-bg-main)
 }
 
 /* Conversations Panel */
@@ -91,6 +92,12 @@ div:has(> .bp_col) {
 /* Settings Dropdown */
 .mx_ContextualMenu_top {
     background-color: var(--dracula-bg-main);
+    color: var(--dracula-text-main) !important;
+}
+
+/* Chat Networks */
+.ChatNetworksDialog {
+    background-color: var(--dracula-bg-main) !important;
     color: var(--dracula-text-main) !important;
 }
 
