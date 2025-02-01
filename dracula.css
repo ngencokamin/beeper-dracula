@@ -70,7 +70,9 @@
     /* Bubbles */
     --chatview__message_self__backgroundcolor: var(--dracula3);
     --chatview__message__backgroundcolor: var(--dracula-bg-main);
-    --floating-button-bg: var(--dracula-bg-main)
+    --floating-button-bg: var(--dracula-bg-main);
+    /* Sender Username Color */
+    --chatview__message_sender_name__fontcolor: var(--dracula-accent-2);
 }
 
 /* Conversations Panel */
