@@ -1,13 +1,24 @@
-<div align=center >
-    <h1 style="border-bottom: 0;">Beeper Dracula</h1>
-        <figure><img src="/home/nix/Projects/beeper-dracula/assets/Dracula_Icon.png" alt="Dracula Logo" style="zoom: 33%;" /><h3 style="margin-top: 0; padding-top: 0;">
-            Unofficial Dracula theme for <a href="https://www.beeper.com">Beeper Desktop</a>
-            </h3></figure>
+<div align="center">
+  <h1 style="border-bottom: 0">Beeper Dracula</h1>
+  <figure>
+    <img
+      src="./assets/Dracula_Icon.png"
+      alt="Dracula Logo"
+      style="width: 150px"
+    />
+    <h3 style="margin-top: 0; padding-top: 0">
+      Unofficial Dracula theme for
+      <a href="https://www.beeper.com">Beeper Desktop</a>
+    </h3>
+  </figure>
+  <figure>
+    <img src="./assets/preview.webp" alt="Preview" style="width: 600px" />
+    <br />
+    <figcaption><b>Preview</b></figcaption>
+  </figure>
 </div>
 
-<h2 align="center">Preview</h2>
 
-<img src="/home/nix/Projects/beeper-dracula/assets/preview.webp" alt="Preview" style="zoom: 85%;" />
 
 <h2 align="center">Install</h2>
 
