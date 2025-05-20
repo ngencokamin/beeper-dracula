@@ -1,0 +1,108 @@
+/*
+# Custom Beeper.app style
+This file will be injected as a <style> tag
+After making your changes, type "Reload custom CSS" in the command bar
+To open dev tools, open the command bar and type "open console"
+*/
+
+
+/* Dracula disclaimer here */
+:root {
+
+  /* Dracula */
+  --dracula0: #282A36;
+  --dracula1: #44475A;
+  --dracula2: #F8F8F2;
+  --dracula3: #6272A4;
+  --dracula4: #8BE9FD;
+  --dracula5: #50FA7B;
+  --dracula6: #FFB86C;
+  --dracula7: #FF79C6;
+  --dracula8: #BD93F9;
+  --dracula9: #FF5555;
+  --dracula10: #F1FA8C;
+
+
+  /*** Colors Assignment ***/
+  --dracula-bg-main: var(--dracula1);
+  --dracula-bg-dark: var(--dracula0);
+  --dracula-text-main: var(--dracula2);
+  --dracula-text-light: var(--dracula2);
+  --dracula-grey: var(--dracula1);
+  --dracula-accent-1: var(--dracula3);
+  --dracula-accent-2: var(--dracula7);
+  --dracula-accent-3: var(--dracula8);
+  --dracula-alert: var(--dracula9);
+
+  /* Splash and Chat BG */
+  --color-surface: var(--dracula-bg-dark);
+  /* Sidebar and Border */
+  --color-background-sidebar-opaque: var(--dracula-bg-main);
+  /* A lot of things */
+  --color-primary: var(--dracula-accent-1);
+  --color-brand: var(--dracula-accent-3);
+  --gradient-brand: linear-gradient(190.1deg, #a667ff -7.24%, var(--dracula-accent-3) 109.66%);
+  /* One of the panels? */
+  --color-secondary-container: var(--dracula-bg-main);
+  /* Right Preferences Pane */
+  --color-background-grouped-weak: var(--dracula-bg-dark);
+  --color-background-grouped: var(--dracula-bg-main);
+  --color-border-neutrals-weak: var(--dracula-bg-dark);
+
+}
+
+
+.account-switcher {
+  background-color: var(--dracula-bg-dark) !important;
+}
+
+.account-switcher--floating.account-switcher--hovering {
+  height: 96vh !important;
+  margin: 2vh 0 2vh 5px !important;
+  border-radius: 10px;
+  transition: margin-left 0.2s;
+}
+
+.account-switcher--floating:not(.account-switcher--hovering) {
+  background-color: transparent !important;
+
+  transition: margin-left 0.2s !important;
+}
+
+
+.right-pane-header {
+  box-shadow: 0 1px 0 var(--dracula-bg-dark) !important;
+}
+
+img[alt="Beeper logo"] {
+  filter: hue-rotate(25deg) saturate(0.6) brightness(1.75)  !important;
+}
+
+/* Setting Items */
+div.brand-combined-icon {
+  color: var(--dracula-accent-3) !important;
+}
+
+/* Hide titlebar */
+#titlebar {
+  visibility: collapse;
+}
+
+/* Command Popup */
+.command-bar {
+  background: var(--dracula-bg-dark);
+}
+
+/* Hotkeys (and presumably other modals) */
+.modal {
+  background: var(--dracula-bg-main);
+}
+
+/* Accounts Dropdown */
+.menu-list {
+  background: var(--dracula-bg-main);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+}
