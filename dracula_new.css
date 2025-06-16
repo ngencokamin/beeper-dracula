@@ -48,7 +48,15 @@ To open dev tools, open the command bar and type "open console"
   --color-background-grouped-weak: var(--dracula-bg-dark);
   --color-background-grouped: var(--dracula-bg-main);
   --color-border-neutrals-weak: var(--dracula-bg-dark);
-
+  /* Text */
+  --color-text-neutrals: var(--dracula-text-main);
+  --color-text-translucent: var(--dracula-text-main);
+  --color-on-surface-rgb: var(--dracula-text-main);
+  --color-on-surface: var(--dracula-text-main);
+  /* Compose Bubble */
+  --color-tertiary-container: var(--dracula-bg-main);
+  --color-on-tertiary-container: var(--dracula-text-main);
+  --color-outline: var(--dracula-accent-3);
 }
 
 
