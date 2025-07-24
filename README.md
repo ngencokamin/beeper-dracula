@@ -12,7 +12,7 @@
     </h3>
   </figure>
   <figure>
-    <img src="./assets/preview.webp" alt="Preview" style="width: 600px" />
+    <img src="./assets/screenshot.png" alt="Preview" style="width: 600px" />
     <br />
     <figcaption><b>Preview</b></figcaption>
   </figure>
@@ -22,10 +22,8 @@
 
 <h2 align="center">Install</h2>
 
-1. Open Beeper settings.
-2. Navigate to the "Labs" section.
-3. Enable "Use new Chat View" and "Enable Chat View animations".
-4. Navigate to the "Appearance" section.
-5. Make sure theme is set to "Dark", and disable "Use profile pictures to color messages".
-6. Copy the contents of the "dracula.css" file in this repository (you can download it or copy it directly from the raw view) and paste it into the "Custom CSS " section.
-7. Click apply and enjoy! (Note: You will need to accept a pop-up to re-apply the theme each time you restart Beeper)
+1. Download the file `custom.css` from this repository.
+1. Navigate to your Beeper config folder
+	- You can do this either by navigating to your config folder (eg `~/.config/BeeperTexts`) manually, or by going into the settings menu in the Beeper application, navigating to the appearance menu, and clicking "Show CSS File" under the "Custom CSS" header.
+1. Replace the existing `custom.css` file with the one downloaded from this repository.
+2. Refresh Beeper to see changes in effect (either Ctrl+Alt+Shift+R, or press Ctrl+J to open the command menu and reload from there).
